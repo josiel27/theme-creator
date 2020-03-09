@@ -1,1 +1,24 @@
-<p>decimal-sort works!</p>
+<label for="fname">numberHex: {{numberHex}} </label>
+<form>
+  <label for="fname"  [style.color] = "numberHex">Escolha um numero randomico: </label>
+  <input
+    type="text"
+    name="fname"
+    disabled
+    value="{{numberAtual}}"
+  >
+  <input
+    class="btn-menos"
+    type="button"
+    name="lname"
+    value="-"
+    (click)="rmvNumber()"
+  >
+  <input
+    class="btn-mais"
+    type="button"
+    name="lname"
+    value="+"
+    (click)="addNumber()"
+  >
+</form>
