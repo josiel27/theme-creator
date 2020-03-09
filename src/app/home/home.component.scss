@@ -1,3 +1,75 @@
-.title{
+.title {
   text-align: center;
+}
+
+ul {
+  padding: 0 2rem;
+  li {
+    height: 2.5rem;
+    list-style-type: none;
+    p {
+      padding: 0.5rem;
+    }
+  }
+}
+
+// Theme Colors
+.theme {
+  color: #fff;
+  background-color: #3f51b5;
+}
+.theme-light {
+  color: #000;
+  background-color: #e8eaf6;
+}
+.theme-dark {
+  color: #fff;
+  background-color: #1a237e;
+}
+
+// Theme buttons e labels
+.theme-action {
+  color: #fff;
+  background-color: #311b92;
+}
+.text-theme {
+  color: #1a237e;
+}
+
+//Theme Gradients
+.theme-light-5 {
+  color: #000;
+  background-color: #e8eaf6;
+}
+.theme-light-4 {
+  color: #000;
+  background-color: #c5cae9;
+}
+.theme-light-3 {
+  color: #000;
+  background-color: #9fa8da;
+}
+.theme-light-2 {
+  color: #fff;
+  background-color: #7986cb;
+}
+.theme-light-1 {
+  color: #fff;
+  background-color: #5c6bc0;
+}
+.theme-dark-1 {
+  color: #fff;
+  background-color: #3949ab;
+}
+.theme-dark-2 {
+  color: #fff;
+  background-color: #303f9f;
+}
+.theme-dark-3 {
+  color: #fff;
+  background-color: #283593;
+}
+.theme-dark-4 {
+  color: #fff;
+  background-color: #1a237e;
 }
