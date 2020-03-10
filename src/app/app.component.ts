@@ -7,10 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   componentSelected: string;
+  colorSelected: string;
   showComponent = '';
 
   activeComponentSelected(componentSelected) {
-    console.log('saida ', componentSelected);
     const showComponent = {
       'decimal-sort': 'decimal-sort',
       'colors-hexdecimal': 'colors-hexdecimal'

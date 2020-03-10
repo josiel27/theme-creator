@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-select-component',
@@ -6,6 +6,9 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./select-component.component.scss']
 })
 export class SelectComponentComponent {
+  @Input()
+  colorSelected: string;
+
   @Output()
   componentSelected = new EventEmitter();
 

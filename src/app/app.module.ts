@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { DecimalSortComponent } from './decimal-sort/decimal-sort.component';
 import { ColorsHexdecimalComponent } from './colors-hexdecimal/colors-hexdecimal.component';
 import { SelectComponentComponent } from './select-component/select-component.component';
+import { ColorSelectedComponent } from './color-selected/color-selected.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { SelectComponentComponent } from './select-component/select-component.co
     HomeComponent,
     DecimalSortComponent,
     ColorsHexdecimalComponent,
-    SelectComponentComponent
+    SelectComponentComponent,
+    ColorSelectedComponent
   ],
   imports: [
     BrowserModule,
