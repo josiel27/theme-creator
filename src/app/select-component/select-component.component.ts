@@ -1,4 +1,4 @@
-import { Component, Output } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-select-component',
@@ -7,11 +7,12 @@ import { Component, Output } from '@angular/core';
 })
 export class SelectComponentComponent {
   @Output()
-  componentSelected = 'um';
+  componentSelected = new EventEmitter();
 
   components = [
-    { name: 'decimal-sort' },
-    { name: 'color-hexdecimal' }
+    { id: 'decimal-sort', name: 'Decimal Sort' },
+    { id: 'colors-hexdecimal', name: 'Colors Hexdecimal' },
+    { id: 'none', name: 'Clear' }
   ];
 
   constructor() { }
@@ -19,7 +20,7 @@ export class SelectComponentComponent {
   selectComponent(name: string) {
     this.components.forEach((nameEach) => {
       if (nameEach.name === name) {
-        this.componentSelected = nameEach.name;
+        this.componentSelected.emit(nameEach);
       }
     });
   }
