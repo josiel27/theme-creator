@@ -1,0 +1,8 @@
+<div>
+  <input
+    type="button"
+    *ngFor="let component of components"
+    value="{{ component.name }}"
+    (click)="selectComponent(component.name)"
+  >
+</div>
