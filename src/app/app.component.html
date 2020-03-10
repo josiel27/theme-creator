@@ -1,3 +1,6 @@
-<app-select-component (componentSelected)="activeComponentSelected($event)"></app-select-component>
+<app-select-component
+  [colorSelected]="colorSelected"
+  (componentSelected)="activeComponentSelected($event)"
+></app-select-component>
 <app-home *ngIf="showComponent === 'decimal-sort'"></app-home>
-<app-colors-hexdecimal *ngIf="showComponent === 'colors-hexdecimal'"></app-colors-hexdecimal>
+<app-colors-hexdecimal (colorSelectedEmitter)="colorSelected = $event" *ngIf="showComponent === 'colors-hexdecimal'"></app-colors-hexdecimal>
