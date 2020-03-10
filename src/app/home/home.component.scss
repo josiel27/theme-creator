@@ -13,63 +13,71 @@ ul {
   }
 }
 
+$color-theme: #FF5733;
+
 // Theme Colors
 .theme {
   color: #fff;
-  background-color: #3f51b5;
+  background-color: $color-theme;
 }
 .theme-light {
   color: #000;
-  background-color: #e8eaf6;
+  background-color: lighten($color-theme, 45);
 }
 .theme-dark {
   color: #fff;
-  background-color: #1a237e;
+  background-color: darken($color-theme, 45);
 }
 
 // Theme buttons e labels
 .theme-action {
   color: #fff;
-  background-color: #311b92;
+  background-color: darken($color-theme, 35);
 }
 .text-theme {
-  color: #1a237e;
+  color: lighten($color-theme, 15);
 }
 
 //Theme Gradients
 .theme-light-5 {
   color: #000;
-  background-color: #e8eaf6;
+  background-color: lighten($color-theme, 45);
 }
 .theme-light-4 {
   color: #000;
-  background-color: #c5cae9;
+  background-color: lighten($color-theme, 35);
 }
 .theme-light-3 {
   color: #000;
-  background-color: #9fa8da;
+  background-color: lighten($color-theme, 25);
 }
 .theme-light-2 {
   color: #fff;
-  background-color: #7986cb;
+  background-color: lighten($color-theme, 15);
 }
 .theme-light-1 {
   color: #fff;
-  background-color: #5c6bc0;
+  background-color: lighten($color-theme, 5);
 }
+
 .theme-dark-1 {
   color: #fff;
-  background-color: #3949ab;
+  background-color: darken($color-theme, 5);
 }
 .theme-dark-2 {
   color: #fff;
-  background-color: #303f9f;
+  background-color: darken($color-theme, 15);
 }
 .theme-dark-3 {
   color: #fff;
-  background-color: #283593;
+  background-color: darken($color-theme, 25);
 }
 .theme-dark-4 {
   color: #fff;
-  background-color: #1a237e;
+  background-color: darken($color-theme, 35);
+}
+
+.theme-dark-5 {
+  color: #fff;
+  background-color: darken($color-theme, 45);
 }
