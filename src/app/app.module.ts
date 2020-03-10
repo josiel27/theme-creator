@@ -4,12 +4,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { DecimalSortComponent } from './decimal-sort/decimal-sort.component';
+import { ColorsHexdecimalComponent } from './colors-hexdecimal/colors-hexdecimal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    DecimalSortComponent
+    DecimalSortComponent,
+    ColorsHexdecimalComponent
   ],
   imports: [
     BrowserModule,
